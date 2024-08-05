@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Fetch Data from API</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="head">
+				<h1>API fetchs</h1>
+			</div>
+			<div class="api1">
+				<h1>Population Data</h1>
+				<div class="bottons">
+					<button id="fetchButton">Fetch Data</button>
+					<button id="clearButton">Clear Data</button>
+				</div>
+				<div id="data"></div>
+			</div>
+
+			<div class="api2">
+				<h1>Fetch Anime Data</h1>
+				<div class="form-group">
+					<label for="limit">Limit:</label>
+					<input type="number" id="limit" />
+				</div>
+				<div class="form-group">
+					<label for="string">String:</label>
+					<input type="text" id="string" />
+				</div>
+				<div class="form-group">
+					<label for="type">Type:</label>
+					<select id="type">
+						<option value="tv">TV</option>
+						<option value="movie">Movie</option>
+						<option value="ova">OVA</option>
+						<option value="special">Special</option>
+						<option value="ona">ONA</option>
+						<option value="music">Music</option>
+					</select>
+				</div>
+				<button onclick="fetchAnimeData()">Fetch Anime Data</button>
+				<button onclick="clearAnimeData()">Clear Anime Data</button>
+				<div id="anime-data"></div>
+			</div>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>
